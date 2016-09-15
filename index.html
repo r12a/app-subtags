@@ -108,14 +108,14 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
   <p>Read <a href="http://www.w3.org/International/questions/qa-choosing-language-tags">Choosing a Language Tag</a> for step-by-step guidelines on creating language tags. This tool also provides information to guide your choices.</p>
     <h2>Usage notes</h2>
     <p><strong><span class="notenumber">1</span> Raw data. </strong>Click on the results with a coloured background to see the raw IANA data for a subtag.</p>
-    <p><strong><span class="notenumber" id="note2">2</span> Find.</strong> The description is  the name of the subtag, ie. the language, region, etc. You can search on any part of a description (eg. <a href="index/?find=eng">eng</a> gives results that include B<strong>eng</strong>ali, <strong>Eng</strong>lish and T<strong>eng</strong>war). Note that some languages may be spelled differently, eg. <a href="index/?find=panjabi">Panjabi</a> yields three results, but <a href="index/?find=punjabi">Punjabi</a> only one.</p>
-    <p><strong><span id="note3" class="notenumber">3</span> Look up. </strong> Looks up all forms of all subtags in the list, eg. it returns both a language and extlang subtag for <a href="index/?lookup=cmn">cmn</a>, and it returns both language and region subtags for the CA in <a href="index/?lookup=en-CA">en-CA</a>. Subtags can be separated by commas, semicolons, hyphens, or spaces, eg. <a href="index/?lookup=en%3B%20fr%2C%20ca%2C%20Bali-1901">en; fr, ca, Bali-1901</a>.<br />
-      Only exact matches of subtags are returned, ie. <a href="index/?lookup=ak">ak</a> doesn't match <a href="index/?lookup=akk">akk</a>. <br />
+    <p><strong><span class="notenumber" id="note2">2</span> Find.</strong> The description is  the name of the subtag, ie. the language, region, etc. You can search on any part of a description (eg. <a href="index?find=eng">eng</a> gives results that include B<strong>eng</strong>ali, <strong>Eng</strong>lish and T<strong>eng</strong>war). Note that some languages may be spelled differently, eg. <a href="index?find=panjabi">Panjabi</a> yields three results, but <a href="index?find=punjabi">Punjabi</a> only one.</p>
+    <p><strong><span id="note3" class="notenumber">3</span> Look up. </strong> Looks up all forms of all subtags in the list, eg. it returns both a language and extlang subtag for <a href="index?lookup=cmn">cmn</a>, and it returns both language and region subtags for the CA in <a href="index?lookup=en-CA">en-CA</a>. Subtags can be separated by commas, semicolons, hyphens, or spaces, eg. <a href="index?lookup=en%3B%20fr%2C%20ca%2C%20Bali-1901">en; fr, ca, Bali-1901</a>.<br />
+      Only exact matches of subtags are returned, ie. <a href="index?lookup=ak">ak</a> doesn't match <a href="index?lookup=akk">akk</a>. <br />
       If there is no output for a tag,  it was not a valid tag in the registry.</p>
-    <p><strong><span id="note4" class="notenumber">4</span> Check.</strong> Looks up all subtags in a language tag (ie. a hyphen-separated list of subtags) and reports problems, if there are any, eg. <a href="index/?check=de-419-DE-alt">de-419-DE-alt</a> and <a href="index/?check=ms-cmn">ms-cmn</a>.<br />
-      Warnings are also displayed to guide you in language choices. Example: <a href="index/?check=ms-min-latn">ms-min-Latn</a>.<br />
+    <p><strong><span id="note4" class="notenumber">4</span> Check.</strong> Looks up all subtags in a language tag (ie. a hyphen-separated list of subtags) and reports problems, if there are any, eg. <a href="index?check=de-419-DE-alt">de-419-DE-alt</a> and <a href="index?check=ms-cmn">ms-cmn</a>.<br />
+      Warnings are also displayed to guide you in language choices. Example: <a href="index?check=ms-min-latn">ms-min-Latn</a>.<br />
     </p>
-    <p><strong><span class="notenumber">5</span> &nbsp;<img src="images/ethn.png" alt="Green button with E on it" /></strong> provides a link from a language subtag entry to the SIL Ethnologue. This is useful when trying to find a language. If there is no page for a given language tag, such as <a href="index/?lookup=nn">nn</a>, click on the result to reveal the full record; if there is a macrolanguage specified, eg. 'no',  that will probably yield an ethnologue entry.</p>
+    <p><strong><span class="notenumber">5</span> &nbsp;<img src="images/ethn.png" alt="Green button with E on it" /></strong> provides a link from a language subtag entry to the SIL Ethnologue. This is useful when trying to find a language. If there is no page for a given language tag, such as <a href="index?lookup=nn">nn</a>, click on the result to reveal the full record; if there is a macrolanguage specified, eg. 'no',  that will probably yield an ethnologue entry.</p>
     <p><strong><span class="notenumber">6</span> &nbsp;<img src="images/univ.png" alt="Lilac button with U on it" /></strong> provides a link from a script subtag entry to the most relevant Unicode script block in UniView.<br />
       In some cases, there are additional Unicode areas dedicated to the same script.  These can usually be easily found alongside the current block in UniView's pull-down control. <br />
       Some very large blocks such as Han, Hangul and Egyptian Hieroglyphs are not linked to. Other scripts do not yet have Unicode blocks. </p>
@@ -130,7 +130,7 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
 </div>
 
 <div class="smallprint"><span id="version">First published 1 Apr 2007.  This version <span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2016-09-15  12:04<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2016-09-15  12:06<!-- #EndDate --> 
   </span> GMT. &nbsp;&bull;&nbsp; Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence GNU-GPL (see source code).</span></div>
 
 <script type="text/javascript">
