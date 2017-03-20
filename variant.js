@@ -31,6 +31,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"hepburn",description:"Hepburn romanization",added:"2009-10-01",prefix:"ja-Latn"},
 {type:"variant",subtag:"heploc",description:"Hepburn romanization, Library of Congress method",added:"2009-10-01",deprecated:"2010-02-07",preferredvalue:"alalc97",prefix:"ja-Latn-hepburn",comments:"Preferred tag is ja-Latn-alalc97"},
 {type:"variant",subtag:"hognorsk",description:"Norwegian in Høgnorsk (High Norwegian) orthography",added:"2010-01-02",prefix:"nn",comments:"Norwegian following Ivar Aasen's orthographical principles, including modern usage."},
+{type:"variant",subtag:"hsistemo",description:"Standard H-system orthographic fallback for spelling Esperanto",added:"2017-03-14",prefix:"eo"},
 {type:"variant",subtag:"ijekavsk",description:"Serbian with Ijekavian pronunciation",prefix:"sr, sr-Latn, sr-Cyrl",added:"2013-12-02"},
 {type:"variant",subtag:"itihasa",description:"Epic Sanskrit",added:"2010-07-28",prefix:"sa"},
 {type:"variant",subtag:"jauer",description:"Jauer dialect of Romansh",added:"2010-06-29",prefix:"rm",comments:"The spoken dialect of the Val Müstair, which has no written standard."},
@@ -79,4 +80,5 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"valencia",description:"Valencian",added:"2007-03-06",prefix:"ca",comments:"Variety spoken in the 'Comunidad Valenciana' region of Spain, where it is co-official with Spanish."},
 {type:"variant",subtag:"vallader",description:"Vallader idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Vallader is one of the five traditional written standards or 'idioms' of the Romansh language."},
 {type:"variant",subtag:"wadegile",description:"Wade-Giles romanization",added:"2008-10-03",prefix:"zh-Latn"},
+{type:"variant",subtag:"xsistemo",description:"Standard X-system orthographic fallback for spelling Esperanto",added:"2017-03-14",prefix:"eo"},
 ]
