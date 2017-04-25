@@ -300,5 +300,6 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"151",description:"Eastern Europe",added:"2005-10-16"},
 {type:"region",subtag:"154",description:"Northern Europe",added:"2005-10-16"},
 {type:"region",subtag:"155",description:"Western Europe",added:"2005-10-16"},
+{type:"region",subtag:"202",description:"Sub-Saharan Africa",added:"2017-04-18"},
 {type:"region",subtag:"419",description:"Latin America and the Caribbean",added:"2005-10-16"},
 ]
