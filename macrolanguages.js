@@ -1,5 +1,5 @@
 var macrolanguages = {
-sh:['bs','hr','sr'],
+sh:['bs','hr','sr','cnr'],
 ms:['id','in','bjn','btj','bve','bvu','coa','dup','hji','jak','jax','kvb','kvr','kxd','lce','lcf','liw','max','meo','mfa','mfb','min','mqg','msi','mui','orn','ors','pel','pse','tmw','urk','vkk','vkt','xmm','zlm','zmi','zsm'],
 no:['nb','nn'],
 ak:['tw','fat'],

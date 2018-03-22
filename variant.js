@@ -36,6 +36,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"hsistemo",description:"Standard H-system orthographic fallback for spelling Esperanto",added:"2017-03-14",prefix:"eo"},
 {type:"variant",subtag:"ijekavsk",description:"Serbian with Ijekavian pronunciation",prefix:"sr, sr-Latn, sr-Cyrl",added:"2013-12-02"},
 {type:"variant",subtag:"itihasa",description:"Epic Sanskrit",added:"2010-07-28",prefix:"sa"},
+{type:"variant",subtag:"ivanchov",description:"Bulgarian in 1899 orthography",added:"2017-12-13",prefix:"bg",comments:"Bulgarian orthography introduced by Todor Ivanchov in 1899"},
 {type:"variant",subtag:"jauer",description:"Jauer dialect of Romansh",added:"2010-06-29",prefix:"rm",comments:"The spoken dialect of the Val Müstair, which has no written standard."},
 {type:"variant",subtag:"jyutping",description:"Jyutping Cantonese Romanization",added:"2010-10-23",prefix:"yue",comments:"Jyutping romanization of Cantonese"},
 {type:"variant",subtag:"kkcor",description:"Common Cornish orthography of Revived Cornish",added:"2008-10-14",prefix:"kw"},
