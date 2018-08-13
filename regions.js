@@ -226,7 +226,7 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"SV",description:"El Salvador",added:"2005-10-16"},
 {type:"region",subtag:"SX",description:"Sint Maarten (Dutch part)",added:"2011-01-07"},
 {type:"region",subtag:"SY",description:"Syrian Arab Republic",added:"2005-10-16"},
-{type:"region",subtag:"SZ",description:"Swaziland",added:"2005-10-16"},
+{type:"region",subtag:"SZ",description:"Eswatini, eSwatini, Swaziland",added:"2005-10-16"},
 {type:"region",subtag:"TA",description:"Tristan da Cunha",added:"2009-07-29"},
 {type:"region",subtag:"TC",description:"Turks and Caicos Islands",added:"2005-10-16"},
 {type:"region",subtag:"TD",description:"Chad",added:"2005-10-16"},
