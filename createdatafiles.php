@@ -66,6 +66,7 @@ $registry = file_get_contents('http://www.iana.org/assignments/language-subtag-r
 	
 	
 $registryItems = explode('%%', $registry);
+$regLength = count($registryItems);
 	
 foreach ($registryItems as $item) {
 	$itemLines = explode("\n", $item);
@@ -285,3 +286,9 @@ fwrite( $fp, $out );
 
 
 ?>
+
+<html>
+<body>
+<p>Registry length: <? echo $regLength ?></p>
+</body>
+</html>
