@@ -95,7 +95,7 @@ var languages = [{type:"language",subtag:"aa",description:"Afar",added:"2005-10-
 {type:"language",subtag:"ky",description:"Kirghiz, Kyrgyz",added:"2005-10-16"},
 {type:"language",subtag:"la",description:"Latin",added:"2005-10-16",suppressscript:"Latn"},
 {type:"language",subtag:"lb",description:"Luxembourgish, Letzeburgesch",added:"2005-10-16",suppressscript:"Latn"},
-{type:"language",subtag:"lg",description:"Ganda",added:"2005-10-16"},
+{type:"language",subtag:"lg",description:"Ganda, Luganda",added:"2005-10-16"},
 {type:"language",subtag:"li",description:"Limburgan, Limburger, Limburgish",added:"2005-10-16"},
 {type:"language",subtag:"ln",description:"Lingala",added:"2005-10-16",suppressscript:"Latn"},
 {type:"language",subtag:"lo",description:"Lao",added:"2005-10-16",suppressscript:"Laoo"},
