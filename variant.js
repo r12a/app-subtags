@@ -23,6 +23,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"biske",description:"The San Giorgio dialect of Resian, The Bila dialect of Resian",added:"2007-07-05",prefix:"sl-rozaj",comments:"The dialect of San Giorgio/Bila is one of the four major local dialects of Resian"},
 {type:"variant",subtag:"bohoric",description:"Slovene in Bohorič alphabet",added:"2012-06-27",prefix:"sl",comments:"The subtag represents the alphabet codified by Adam Bohorič in 1584 and used from the first printed Slovene book and up to the mid-19th century."},
 {type:"variant",subtag:"boont",description:"Boontling",added:"2006-09-18",prefix:"en",comments:"Jargon embedded in American English"},
+{type:"variant",subtag:"bornholm",description:"Bornholmsk",added:"2019-03-27",prefix:"da"},
 {type:"variant",subtag:"cisaup",description:"Cisalpine",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in northwestern Italy"},
 {type:"variant",subtag:"colb1945",description:"Portuguese-Brazilian Orthographic Convention of 1945 (Convenção Ortográfica Luso-Brasileira de 1945)",added:"2015-05-06",prefix:"pt",comments:"Portuguese orthography conventions established in 1945, generally in effect until 2009. This reform was not ratified in Brazil."},
 {type:"variant",subtag:"cornu",description:"Cornu-English, Cornish English, Anglo-Cornish",added:"2015-12-07",prefix:"en"},
