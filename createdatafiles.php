@@ -61,8 +61,8 @@ $variant    	= array();
 $extlang    	= array();
 
 
-$registry = file_get_contents('http://www.iana.org/assignments/language-subtag-registry');
-#$registry = file_get_contents('registry.txt');
+#$registry = file_get_contents('http://www.iana.org/assignments/language-subtag-registry');
+$registry = file_get_contents('registry.txt');
 	
 	
 $registryItems = explode('%%', $registry);

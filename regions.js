@@ -154,7 +154,7 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"MF",description:"Saint Martin (French part)",added:"2007-11-02"},
 {type:"region",subtag:"MG",description:"Madagascar",added:"2005-10-16"},
 {type:"region",subtag:"MH",description:"Marshall Islands",added:"2005-10-16"},
-{type:"region",subtag:"MK",description:"The Former Yugoslav Republic of Macedonia",added:"2005-10-16"},
+{type:"region",subtag:"MK",description:"North Macedonia",added:"2005-10-16"},
 {type:"region",subtag:"ML",description:"Mali",added:"2005-10-16"},
 {type:"region",subtag:"MM",description:"Myanmar",added:"2005-10-16"},
 {type:"region",subtag:"MN",description:"Mongolia",added:"2005-10-16"},
