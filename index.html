@@ -4,20 +4,20 @@
 <meta charset="utf-8" />
 <title>Language subtag lookup app</title>
 <meta name="description" content="Search the IANA language subtag registry or list subtags by category." />
-<link rel="stylesheet" href="../r12a.github.io/style/docs.css" type="text/css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<script type="text/javascript" src="silcodes.js"> </script>
-<script type="text/javascript" src="scriptcodes.js"> </script>
-<script type="text/javascript" src="languages.js"> </script>
-<script type="text/javascript" src="scripts.js"> </script>
-<script type="text/javascript" src="regions.js"> </script>
-<script type="text/javascript" src="extlang.js"> </script>
-<script type="text/javascript" src="grandfathered.js"> </script>
-<script type="text/javascript" src="variant.js"> </script>
-<script type="text/javascript" src="macrolanguages.js"> </script>
-<script type="text/javascript" src="predominant.js"> </script>
-<script type="text/javascript" src="functions.js"> </script>
-<script type="text/javascript" src="../r12a.github.io/code/boilerplate.js"></script>
+<link rel="stylesheet" href="../r12a.github.io/style/docs.css" />
+<link rel="stylesheet" href="style.css" />
+<script src="silcodes.js"> </script>
+<script src="scriptcodes.js"> </script>
+<script src="languages.js"> </script>
+<script src="scripts.js"> </script>
+<script src="regions.js"> </script>
+<script src="extlang.js"> </script>
+<script src="grandfathered.js"> </script>
+<script src="variant.js"> </script>
+<script src="macrolanguages.js"> </script>
+<script src="predominant.js"> </script>
+<script src="functions.js"> </script>
+<script src="../r12a.github.io/code/boilerplate.js"></script>
 <!--
 Copyright (C) 2007  Richard Ishida ishida@w3.org
 
@@ -42,11 +42,11 @@ http://www.gnu.org/licenses/gpl.html
 <body class="app">
 <header>
 <div id="header-boilerplate"></div>
-<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('../r12a.github.io/images/world.gif', 'Language subtag lookup','');</script>
+<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('../r12a.github.io/images/world.gif', 'BCP47 language subtag lookup','');</script>
 </header>
 
-<div class="section">
-  <div id="search">
+<div id="main">
+<div id="input">
       <p><strong class="task">Find</strong> <br/>
         a subtag by searching for text in the descriptions <a href="#note2" class="explanation">See note&#xA0;2.</a> <br />
         <input type="text" name="find" id="findinput"   onChange="find(document.getElementById('findinput').value.toLowerCase()); displayResults('find');" />
@@ -58,8 +58,6 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
         <input id="lookupinput" type="text" name="lookup" onchange="lookup(document.getElementById('lookupinput').value); displayResults('lookup');" />
         <input onClick="lookup(document.getElementById('lookupinput').value); displayResults('lookup');" type="submit" value="Look up" />
       </p>
-  </div>
-  <div id="check">
       <p> <strong class="task">Check</strong> <br>
         whether a  hyphen-separated tag is valid and well-formed <a href="#note4" class="explanation">See note&#xA0;4.</a><br />
         <input id="checkinput" type="text" name="check" onChange="parseTag(document.getElementById('checkinput').value); displayResults('check');" />
@@ -80,12 +78,14 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
         <input onclick="showList(document.getElementById('listselect').value); displayResults('list');" type="submit" value="List" name="submit" />
       </p>
   </div>
-  <br style="clear:left" />
-</div>
 
+<div id="output">
 <div id="errors"></div>
 
-<div id="out"></div>
+<div id="out">&nbsp;</div>
+</div>
+</div>
+
 
 
 <div id="showNotes"  style="margin-left: 7.5%"  onclick="toggleNotes()">show notes</div>
@@ -130,12 +130,12 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
 </div>
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-subtags/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2019-06-06  16:55<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2019-06-07  17:47<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-subtags/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a> </div>
 
-<script type="text/javascript">
+<script>
 // check for parameters and take appropriate action
 parameters = location.search.split('&')
 parameters[0] = parameters[0].substring(1)
