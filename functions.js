@@ -30,6 +30,9 @@ var tagsInputByUser = new Array;  // one per subtag, listing posn, type and valu
 
 
 function find (str) {
+	_errormsg = ''
+	_warnings = ''
+	_info = ''
 	_languageList = ''; 
 	_scriptList = ''; 
 	_regionsList = ''; 
@@ -37,7 +40,8 @@ function find (str) {
 	_grandList = ''; 
 	_extlangList = ''; 
 	_extensionInfo = ''; 
-	document.getElementById('errors').innerHTML
+	document.getElementById('errors').innerHTML = ''
+	console.log('hi',document.getElementById('errors').innerHTML)
 	
 	for (var i=0;i<languages.length;i++) {
 		if (languages[i] && languages[i]['description'] && languages[i]['description'].toLowerCase().match(str)) {
@@ -206,6 +210,9 @@ function displayResults (source) {
 
 
 function showList (list) {
+	_errormsg = ''
+	_warnings = ''
+	_info = ''
 	_languageList = ''; 
 	_scriptList = ''; 
 	_regionsList = ''; 
