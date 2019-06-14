@@ -66,7 +66,7 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
     
       <p><strong class="task">List</strong><br/>
         all tags of the following type<br />
-        <select id="listselect" onChange="showList(document.getElementById('listselect').value); displayResults('list');">
+        <select id="listselect" onChange="showList(document.getElementById('listselect').value); if (document.getElementById('listselect').value==='suppressscript') {displayResults('suppressscript');} else displayResults('list');">
           <option value="0">Choose...</option>
           <option value="language">Languages (takes a while!)</option>
           <option value="extlang">Extlangs</option>
@@ -74,8 +74,9 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
           <option value="regions">Regions</option>
           <option value="variant">Variants</option>
           <option value="grandfathered">Grandfathered</option>
+          <option value="suppressscript">Suppress script</option>
         </select>
-        <input onclick="showList(document.getElementById('listselect').value); displayResults('list');" type="submit" value="List" name="submit" />
+        <input onclick="showList(document.getElementById('listselect').value); if (document.getElementById('listselect').value==='suppressscript') {displayResults('suppressscript');} else displayResults('list');" type="submit" value="List" name="submit" />
       </p>
   </div>
 
@@ -130,7 +131,7 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
 </div>
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-subtags/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2019-06-07  18:26<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2019-06-13  9:27<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-subtags/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>
@@ -160,7 +161,8 @@ for (var p=0;p<parameters.length;p++) {
 	if (pairs[0] == 'list' && pairs[1]) { 
 		document.getElementById('listselect').value = pairs[1]
 		showList(document.getElementById('listselect').value)
-		displayResults('list');
+		if (pairs[1]==='suppressscript') displayResults('suppressscript')
+		else displayResults('list')
 		}
 	}
 

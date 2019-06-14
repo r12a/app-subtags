@@ -153,8 +153,10 @@ function generateFinalList (listtype) {
 	_finalList = '';
 	
 	if (_languageList != '') { 
-		_finalList += "<h2>Language Codes "; if (listtype == 'list') { _finalList+=" ("+languages.length+" subtags)"; }
-		_finalList += "</h2><div id='listLanguages'>"+ _languageList+"</div>";
+		_finalList += "<h2>Language Codes "
+		if (listtype == 'list') { _finalList+=" ("+languages.length+" subtags)" }
+		else if (listtype == 'suppressscript') { _finalList+=" with suppress script directives" }
+		_finalList += "</h2><div id='listLanguages'>"+ _languageList+"</div>"
 		}
 	if (_extlangList != '') { 
 		_finalList += "<h2>Extlang "; if (listtype == 'list') { _finalList+=" ("+extlang.length+" subtags)"; }
@@ -229,6 +231,7 @@ function showList (list) {
 		case 'regions'	: for (i=0;i<regions.length;i++) { _regionsList += makeListItem(regions[i], 'search');	} break;
 		case 'grandfathered'	: for (i=0;i<grandfathered.length;i++) { _grandList += makeListItem(grandfathered[i], 'search');	} break;
 		case 'variant'	: for (i=0;i<variant.length;i++) { _variantList += makeListItem(variant[i], 'search');	} break;
+		case 'suppressscript'	: for (i=0;i<languages.length;i++) { if (languages[i].suppressscript) _languageList += makeListItem(languages[i], 'search');	} break;
 		}
 	}
 
@@ -352,8 +355,8 @@ function parseTag (searchtext) {
 		return
 		}
 
-	
-	// check for grandfathered tags and if found add to _grandList
+
+// check for grandfathered tags and if found add to _grandList
 	for (subtag in grandfathered) {  //console.log(searchtext)
 		if (grandfathered[subtag]['tag'].toLowerCase() == searchtext) { _grandList += makeListItem(grandfathered[subtag]) }
 		}
@@ -704,6 +707,9 @@ function makeListItem (item, searchtype) {
 
 	// check for useful information if this is a search, rather than a check
 	if (searchtype != 'check') { 
+		if (item['suppressscript']) { 
+			div += '<div class="comments" style="font-size:80%;"><img src="images/warnings.png" alt="Note." /> &nbsp;&nbsp; The script tag <span class="stname">'+item['suppressscript']+'</span> should not be used with this language tag.</div>'; 
+			}
 		if (item['scope'] && item['scope'] == 'macrolanguage') { 
 			list = ''; comm = '';
 			for (m=0;m<macrolanguages[item['subtag']].length;m++) { list += ' '+macrolanguages[item['subtag']][m]; }
@@ -769,7 +775,6 @@ function makeListItem (item, searchtype) {
 }
 
 
-
 function checkforwarnings (str) { //console.log('sstr',str)
 	if (str['deprecated']) { //console.log('deprecated')
 		var pf = ''
@@ -782,8 +787,8 @@ function checkforwarnings (str) { //console.log('sstr',str)
 			}
 		_warnings += '<p class="report"><img src="images/warning.png" alt="Warning:" />&nbsp; <span class="stname">'+str['subtag']+"</span> is deprecated. "+pf+comm+".</p>" 
 		}
-	if (str['type'] == 'script' && tagsInputByUser[0]['suppress-script'] && tagsInputByUser[0]['suppress-script'] == str['subtag']) { 
-		_warnings += '<p class="report"><img src="images/warning.png" alt="Warning:" />&nbsp; The <a href="http://www.w3.org/International/articles/language-tags/#script" class=term>script</a> tag <span class="stname">'+str['subtag']+"</span> shouldn't be used with the language subtag <span class='stname'>"+tagsInputByUser[0]['subtag']+"</span>.</p>"
+	if (str['type'] == 'script' && tagsInputByUser[0]['suppressscript'] && tagsInputByUser[0]['suppressscript'] == str['subtag']) { 
+		_warnings += '<p class="report"><img src="images/warning.png" alt="Warning:" />&nbsp; A <code>suppressscript</code> field for the language subtag <span class=\'stname\'>'+tagsInputByUser[0]['subtag']+'</span> indicates that the <a href="http://www.w3.org/International/articles/language-tags/#script" class="term">script</a> subtag <span class="stname">'+str['subtag']+'</span> should not be used here (because it is assumed to be the default).</p>'
 		}
 	if (str['type'] == 'extlang' && tagsInputByUser[0]['subtag'] != str['prefix']) { 
 		_errormsg += '<p class="report"><img src="images/error.png" alt="Error:" />&nbsp; The extended language subtag <span class="stname">'+str['subtag']+"</span> must be used with the language subtag <span class='stname'>"+str['prefix']+"</span>. Note, however, that it is better to just use the <span class='stname'>"+str['subtag']+"</span> language subtag, rather than <span class='stname'>"+str['prefix']+'-'+str['subtag']+"</span>.</p>"
