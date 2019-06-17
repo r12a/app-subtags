@@ -237,7 +237,7 @@ sub { color:#C30; font-style: italic; }
 	text-align:center;
 	}
 
-#showNotes {
+#showNotes, #listList {
 	margin-left: 2em;
 	margin-top: 4em;
 	}

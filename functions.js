@@ -41,7 +41,6 @@ function find (str) {
 	_extlangList = ''; 
 	_extensionInfo = ''; 
 	document.getElementById('errors').innerHTML = ''
-	console.log('hi',document.getElementById('errors').innerHTML)
 	
 	for (var i=0;i<languages.length;i++) {
 		if (languages[i] && languages[i]['description'] && languages[i]['description'].toLowerCase().match(str)) {
@@ -699,7 +698,7 @@ function makeListItem (item, searchtype) {
 		div += "<span class='sil'><a target='_blank' href='https://en.wikipedia.org/w/index.php?search="+description+"'><img src='images/wikipedia.png' title='Look up in Wikipedia.' alt='Look up in Wikipedia.' /></a></span> &nbsp;"; 
 		}
 
-	div +=  '<span class="st">'+subtag+'</span>'+description+'</h3>';
+	div +=  '<span class="st">'+subtag+'</span> <span class="desc">'+description+'</span></h3>';
 	
 	if (item['comments']) { 
 		div += "<div class='comments' style='font-size:80%;'><img src='images/comments.png' alt='Comment.' /> &nbsp;&nbsp;Registry comment: "+item['comments']+"</div>"; 
@@ -866,4 +865,20 @@ function toggleRegistryDetails(item) {
 		}
 	else { itemDetails[0].style.display = 'block'; }
 	}
+
+
+
+function listList (formatString) {
+	sts = document.querySelectorAll('.st')
+	descs = document.querySelectorAll('.desc')
+	
+	out = ''
+	for (let i=0;i<sts.length;i++) {
+		if (i>0) out += ', '
+		out += formatString.replace(/\$subtag/g,sts[i].textContent).replace(/\$desc/g,descs[i].textContent)
+		}
+	return out
+	}
+
+
 
