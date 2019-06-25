@@ -18,6 +18,7 @@
 <script src="predominant.js"> </script>
 <script src="functions.js"> </script>
 <script src="../r12a.github.io/code/boilerplate.js"></script>
+<script src="../app-charuse/langs.js"></script>
 <!--
 Copyright (C) 2007  Richard Ishida ishida@w3.org
 
@@ -90,13 +91,14 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
 
 
 
-<div id="listList"><button onClick="document.getElementById('listout').textContent = listList(document.getElementById('listDividers').value)">Produce list of tags</button> Format: <input id="listDividers" value="$desc [$subtag]" style="border-radius: 5px;padding: 0 1em;"/><br/><span id="listout" style="font-size: 80%;"></span></div>
+<div id="listList"><button style="font-size: 100%; color:#333;background-color:#eee; padding:.2em .4em; border-radius:5px; border:0; cursor:pointer;" onClick="document.getElementById('listout').textContent = listList(document.getElementById('listDividers').value)">Produce a list of tags</button> Format: <input id="listDividers" value="$desc [$subtag]" style="border-radius: 5px;padding: 0 1em;"/><br/><span id="listout" style="font-size: 80%;"></span></div>
 
 
 
-<div id="showNotes"  onclick="toggleNotes()">show notes</div>
 
-<div id="detailednotes" style="display:none">
+<details id="showNotes">
+<summary><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;">Help</span></summary>
+
 <aside class="sidebar">
   <div class="section">
     <h2 class="flush">Related links</h2>
@@ -107,7 +109,7 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
   </div>
 </aside>
 
-<p id="status">Updated Tue 30 Apr 2018  &bull; tags <a href="http://rishida.net/blog/index.php?tag=subtags" title="Show all blog posts tagged with 'subtags'">subtags</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
+<p id="status">Updated Tue 25 Jun 2019  &bull; tags <a href="http://rishida.net/blog/index.php?tag=subtags" title="Show all blog posts tagged with 'subtags'">subtags</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
 
 <div class="section">
   <p>BCP 47 language tags are built from subtags in the IANA Subtag Registry. This tool helps you find or look up subtags and check for errors in language tags.</p>
@@ -121,22 +123,26 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
     <p><strong><span id="note4" class="notenumber">4</span> Check.</strong> Looks up all subtags in a language tag (ie. a hyphen-separated list of subtags) and reports problems, if there are any, eg. <a href="index?check=de-419-DE-alt">de-419-DE-alt</a> and <a href="index?check=ms-cmn">ms-cmn</a>.<br />
       Warnings are also displayed to guide you in language choices. Example: <a href="index?check=ms-min-latn">ms-min-Latn</a>.<br />
     </p>
-    <p><strong><span class="notenumber">5</span> &nbsp;<img src="images/ethn.png" alt="Green button with E on it" /></strong> provides a link from a language subtag entry to the SIL Ethnologue. This is useful when trying to find a language. If there is no page for a given language tag, such as <a href="index?lookup=nn">nn</a>, click on the result to reveal the full record; if there is a macrolanguage specified, eg. 'no',  that will probably yield an ethnologue entry.</p>
-    <p><strong><span class="notenumber">6</span> &nbsp;<img src="images/univ.png" alt="Lilac button with U on it" /></strong> provides a link from a script subtag entry to the most relevant Unicode script block in UniView.<br />
+    <p><strong><span class="notenumber">5</span> &nbsp;<img src="images/charuse.png" alt="Icon with C on it" /></strong> provides a link from a language subtag entry to the Character Usage app. This provides details of characters used by the language, often in multiple orthographies. Macrolanguages have redirects to child languages in the Character Usage app.</p>
+    <p><strong><span class="notenumber">6</span> &nbsp;<img src="images/ethn.png" alt="Icon with E on it" /></strong> provides a link from a language subtag entry to the SIL Ethnologue. This is useful when trying to find a language. If there is no page for a given language tag, such as <a href="index?lookup=nn">nn</a>, click on the result to reveal the full record; if there is a macrolanguage specified, eg. 'no',  that will probably yield an ethnologue entry.</p>
+    <p><strong><span class="notenumber">7</span> &nbsp;<img src="images/univ.png" alt="Icon with U on it" /></strong> provides a link from a script subtag entry to the most relevant Unicode script block in UniView.<br />
       In some cases, there are additional Unicode areas dedicated to the same script.  These can usually be easily found alongside the current block in UniView's pull-down control. <br />
       Some very large blocks such as Han, Hangul and Egyptian Hieroglyphs are not linked to. Other scripts do not yet have Unicode blocks. </p>
-    <p><strong><span class="notenumber">7</span> &nbsp;<img src="images/wikipedia.png" alt="White button with W on it" /></strong> provides a link from a language or script subtag entry to search Wikipedia. It uses the description as the search key. </p>
-    <p><strong><span class="notenumber">8</span> Grandfathered tags</strong> are pre-RFC 4646 registrations of tags that cannot be completely composed 
+    <p><strong><span class="notenumber">8</span> &nbsp;<img src="images/wiki_grn.png" alt="Icon with W on it" /></strong> provides a link from a language or script subtag entry to search Wikipedia. It uses the description as the search key. </p>
+    <p><strong><span class="notenumber">9</span> Grandfathered tags</strong> are pre-RFC 4646 registrations of tags that cannot be completely composed 
       from the subtags in the current registry.  If you search for a grandfathered tag it will be displayed in the results, 
       and the subtags that are in the current registry will also be shown.</p>
-    <p><strong><span class="notenumber">9</span> Redundant tags</strong> are pre-RFC 4646 registrations of tags that can now be formed by 
+    <p><strong><span class="notenumber">10</span> Redundant tags</strong> are pre-RFC 4646 registrations of tags that can now be formed by 
       combining separate subtags from the current registry. They do not show up in search results.</p>
 
 </div>
-</div>
+</details>
+
+
+
 
 <div class="smallprint" style="margin-right: 1em;"><span id="version">Latest commit <a href="https://github.com/r12a/app-subtags/commits/gh-pages"><span id="version-info"> 
-  <!-- #BeginDate format:IS1m -->2019-06-17  11:29<!-- #EndDate --> 
+  <!-- #BeginDate format:IS1m -->2019-06-25  18:29<!-- #EndDate --> 
 	</span> GMT</a>.
 	Make a <a href="https://github.com/r12a/app-subtags/issues/new">comment</a>. 
 	Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a> © <a href="mailto:r12a@w3.org">r12a</a></span></div>

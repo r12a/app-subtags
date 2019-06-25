@@ -680,11 +680,23 @@ function makeListItem (item, searchtype) {
 
 	var div =  '<div class="registryItem">\n<h3>';
 
+	// add a link to Wikipedia search
+	if (item['type'] == 'language') { 
+		div += "<span class='sil'><a target='_blank' href='https://en.wikipedia.org/w/index.php?search="+description+"'><img src='images/wiki_grn.png' title='Look up in Wikipedia.' alt='Look up in Wikipedia.' /></a></span> &nbsp;"; 
+		}
+	// add a link to Wikipedia search
+	if (item['type'] == 'script') { 
+		div += "<span class='sil'><a target='_blank' href='https://en.wikipedia.org/w/index.php?search="+description+"'><img src='images/wiki_brn.png' title='Look up in Wikipedia.' alt='Look up in Wikipedia.' /></a></span> &nbsp;"; 
+		}
 	// add the link to the Ethnologue
 	if (item['type'] == 'language') { 
 		if (sil[subtag]) { siltag = sil[subtag]; }
 		else { siltag = subtag; }					  
 		div += "<span class='sil'><a target='_blank' href='http://www.ethnologue.com/show_language.asp?code="+siltag+"'><img src='images/ethn.png' title='Look up in the SIL Ethnologue.' alt='Look up in the SIL Ethnologue.' /></a></span>"; 
+		}
+	// add a link to charuse app
+	if (item['type'] == 'language' && langs[subtag]) { 
+		div += "<span class='sil'><a target='_blank' href='../app-charuse/?language="+subtag+"'><img src='images/charuse.png' title='Look up in the Character Usage app.' alt='Look up in the Character Usage app.' /></a></span> &nbsp;"; 
 		}
 	// add the link to UniView for script subtags
 	if (item['type'] == 'script') { 
@@ -692,10 +704,6 @@ function makeListItem (item, searchtype) {
 			univiewtag = scriptcodes[subtag]; 
 			div += "<span class='sil'><a target='_blank' href='/uniview/?block="+univiewtag+"'><img src='images/univ.png' title='Look up in UniView.' alt='Look up in UniView.' /></a></span>"; 
 			}
-		}
-	// add a link to Wikipedia search
-	if (item['type'] == 'language' || item['type'] == 'script') { 
-		div += "<span class='sil'><a target='_blank' href='https://en.wikipedia.org/w/index.php?search="+description+"'><img src='images/wikipedia.png' title='Look up in Wikipedia.' alt='Look up in Wikipedia.' /></a></span> &nbsp;"; 
 		}
 
 	div +=  '<span class="st">'+subtag+'</span> <span class="desc">'+description+'</span></h3>';
