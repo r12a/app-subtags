@@ -181,6 +181,7 @@ var scripts = [{type:"script",subtag:"Adlm",description:"Adlam",added:"2014-12-1
 {type:"script",subtag:"Thai",description:"Thai",added:"2005-10-16"},
 {type:"script",subtag:"Tibt",description:"Tibetan",added:"2005-10-16"},
 {type:"script",subtag:"Tirh",description:"Tirhuta",added:"2011-08-16"},
+{type:"script",subtag:"Toto",description:"Toto",added:"2020-05-12"},
 {type:"script",subtag:"Ugar",description:"Ugaritic",added:"2005-10-16"},
 {type:"script",subtag:"Vaii",description:"Vai",added:"2005-10-16"},
 {type:"script",subtag:"Visp",description:"Visible Speech",added:"2005-10-16"},
