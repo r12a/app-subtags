@@ -90,6 +90,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"sursilv",description:"Sursilvan idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Sursilvan is one of the five traditional written standards or 'idioms' of the Romansh language."},
 {type:"variant",subtag:"sutsilv",description:"Sutsilvan idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Sutsilvan is one of the five traditional written standards or 'idioms' of the Romansh language."},
 {type:"variant",subtag:"tarask",description:"Belarusian in Taraskievica orthography",added:"2007-04-27",prefix:"be",comments:"The subtag represents Branislau Taraskievic's Belarusian orthography as published in 'Bielaruski klasycny pravapis' by Juras Buslakou, Vincuk Viacorka, Zmicier Sanko, and Zmicier Sauka (Vilnia- Miensk 2005)."},
+{type:"variant",subtag:"tongyong",description:"Tongyong Pinyin romanization",added:"2020-06-08",prefix:"zh-Latn",comments:"Former official transcription standard for Mandarin Chinese in Taiwan."},
 {type:"variant",subtag:"uccor",description:"Unified Cornish orthography of Revived Cornish",added:"2008-10-14",prefix:"kw"},
 {type:"variant",subtag:"ucrcor",description:"Unified Cornish Revised orthography of Revived Cornish",added:"2008-10-14",prefix:"kw"},
 {type:"variant",subtag:"ulster",description:"Ulster dialect of Scots",added:"2010-04-10",prefix:"sco"},
