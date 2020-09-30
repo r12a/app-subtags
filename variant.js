@@ -99,6 +99,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"vaidika",description:"Vedic Sanskrit",added:"2010-07-28",prefix:"sa",comments:"The most ancient dialect of Sanskrit used in verse and prose composed until about the 4th century B.C.E."},
 {type:"variant",subtag:"valencia",description:"Valencian",added:"2007-03-06",prefix:"ca",comments:"Variety spoken in the 'Comunidad Valenciana' region of Spain, where it is co-official with Spanish."},
 {type:"variant",subtag:"vallader",description:"Vallader idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Vallader is one of the five traditional written standards or 'idioms' of the Romansh language."},
+{type:"variant",subtag:"vecdruka",description:"Latvian orthography used before 1920s ('vecā druka')",added:"2020-09-26",prefix:"lv",comments:"The subtag represents the old orthography of the Latvian language used during c. 1600s–1920s."},
 {type:"variant",subtag:"vivaraup",description:"Vivaro-Alpine",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in northeastern Occitania"},
 {type:"variant",subtag:"wadegile",description:"Wade-Giles romanization",added:"2008-10-03",prefix:"zh-Latn"},
 {type:"variant",subtag:"xsistemo",description:"Standard X-system orthographic fallback for spelling Esperanto",added:"2017-03-14",prefix:"eo"},
