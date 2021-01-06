@@ -12,6 +12,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"aranes",description:"Aranese",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in the Val d'Aran"},
 {type:"variant",subtag:"arevela",description:"Eastern Armenian",added:"2006-09-18",deprecated:"2018-03-24",prefix:"hy",comments:"Preferred tag is hy"},
 {type:"variant",subtag:"arevmda",description:"Western Armenian",added:"2006-09-18",deprecated:"2018-03-24",prefix:"hy",comments:"Preferred tag is hyw"},
+{type:"variant",subtag:"arkaika",description:"Arcaicam Esperantom, Arkaika Esperanto",added:"2020-12-17",prefix:"eo",comments:"Archaic Esperanto variant devised by Manuel Halvelik"},
 {type:"variant",subtag:"asante",description:"Asante Twi, Ashanti Twi",added:"2017-06-05",prefix:"tw"},
 {type:"variant",subtag:"auvern",description:"Auvergnat",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in Auvergne"},
 {type:"variant",subtag:"baku1926",description:"Unified Turkic Latin Alphabet (Historical)",added:"2007-04-18",prefix:"az, ba, crh, kk, krc, ky, sah, tk, tt, uz",comments:"Denotes alphabet used in Turkic republics/regions of the former USSR in late 1920s, and throughout 1930s, which aspired to represent equivalent phonemes in a unified fashion. Also known as: New Turkic Alphabet; Birlәşdirilmiş Jeni Tyrk Әlifbasь (Birlesdirilmis Jeni Tyrk Elifbasi); Jaŋalif (Janalif)."},
