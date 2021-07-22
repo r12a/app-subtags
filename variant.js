@@ -90,6 +90,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"surmiran",description:"Surmiran idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Surmiran is one of the five traditional written standards or 'idioms' of the Romansh language."},
 {type:"variant",subtag:"sursilv",description:"Sursilvan idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Sursilvan is one of the five traditional written standards or 'idioms' of the Romansh language."},
 {type:"variant",subtag:"sutsilv",description:"Sutsilvan idiom of Romansh",added:"2010-06-29",prefix:"rm",comments:"Sutsilvan is one of the five traditional written standards or 'idioms' of the Romansh language."},
+{type:"variant",subtag:"synnejyl",description:"Synnejysk, South Jutish",added:"2021-07-17",prefix:"da"},
 {type:"variant",subtag:"tarask",description:"Belarusian in Taraskievica orthography",added:"2007-04-27",prefix:"be",comments:"The subtag represents Branislau Taraskievic's Belarusian orthography as published in 'Bielaruski klasycny pravapis' by Juras Buslakou, Vincuk Viacorka, Zmicier Sanko, and Zmicier Sauka (Vilnia- Miensk 2005)."},
 {type:"variant",subtag:"tongyong",description:"Tongyong Pinyin romanization",added:"2020-06-08",prefix:"zh-Latn",comments:"Former official transcription standard for Mandarin Chinese in Taiwan."},
 {type:"variant",subtag:"tunumiit",description:"Tunumiisiut, East Greenlandic, Østgrønlandsk",added:"2020-07-16",prefix:"kl",comments:"Also known as Tunumiit oraasiat"},
