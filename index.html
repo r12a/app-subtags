@@ -16,6 +16,7 @@
 <script src="variant.js"> </script>
 <script src="macrolanguages.js"> </script>
 <script src="predominant.js"> </script>
+<script src="date.js"> </script>
 <script src="functions.js"> </script>
 <script src="../shared/code/boilerplate.js"></script>
 <script src="../app-charuse/langs.js"></script>
@@ -91,39 +92,45 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
 
 
 
-<div id="listList"><button style="font-size: 100%; color:#333;background-color:#eee; padding:.2em .4em; border-radius:5px; border:0; cursor:pointer;" onClick="document.getElementById('listout').textContent = listList(document.getElementById('listDividers').value)">Produce a list of tags</button> Format: <input id="listDividers" value="$desc [$subtag]" style="border-radius: 5px;padding: 0 1em;"/><br/><span id="listout" style="font-size: 80%;"></span></div>
+<div id="listList">
+<h2>Produce a list of tags</h2>
+
+<div> <label>Format: <input id="listDividers" value="$desc [$subtag]" style="border-radius:5px; padding: 0 1em;"/><button style="margin-inline-start: 3em;" onClick="document.getElementById('listout').textContent = listList(document.getElementById('listDividers').value)">Go</button></label><br/><span id="listout" style="font-size: 80%;"></span></div>
+</div>
 
 
 
+<div id="showNotes">
+<p>BCP 47 language tags are built from subtags in the IANA Subtag Registry. This tool helps you find or look up subtags and check for errors in language tags.</p>
+<p id="counts">Supports the IANA Subtag registry of <span id="versionDate"></span>. The tool currently reports subtags for <span id="langCount"></span> languages, <span id="extlangCount"></span> extlangs, <span id="scriptCount"></span> scripts, <span id="regionCount"></span> regions, <span id="variantCount"></span> variants, and 26 grandfathered subtags.</p>
+<script>
+document.getElementById('langCount').textContent = languages.length
+document.getElementById('extlangCount').textContent = extlang.length
+document.getElementById('scriptCount').textContent = scripts.length
+document.getElementById('regionCount').textContent = regions.length
+document.getElementById('variantCount').textContent = variant.length
+document.getElementById('versionDate').textContent = versionDate
+</script>
 
-<details id="showNotes">
-<summary><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;">Help</span></summary>
+<details>
+<!--summary><span style="color:white;background-color:#60ADFB; padding:.2em .4em; border-radius:5px; cursor:pointer;">Help</span></summary-->
+<summary>Show more</summary>
 
-<aside class="sidebar">
-  <div class="section">
-    <h2 class="flush">Related links</h2>
-    <p><a target="_blank" href="http://www.w3.org/International/articles/language-tags/">About language subtags</a></p>
-    <p><a target="_blank" href="http://www.iana.org/assignments/language-subtag-registry">IANA subtag registry</a></p>
-    <h2>Version information</h2>
-    <p>Currently supports the IANA Subtag registry of 2021-07-21.  The tool currently reports subtags for 8,213  languages, 245 extlangs, 209 scripts, 304 regions, 107 variants, and 26 grandfathered subtags. Please report any bugs to <a href="mailto:ishida@w3.org">me</a>.</p>
-  </div>
-</aside>
+  <p>Read <a href="http://www.w3.org/International/questions/qa-choosing-language-tags">Choosing a Language Tag</a> for step-by-step guidelines on creating language tags. This tool also provides information to guide your choices.</p>
 
-<p id="status">Updated Thu 17 May 2021  &bull; tags <a href="http://r12a.github.io/blog/index.php?tag=subtags" title="Show all blog posts tagged with 'subtags'">subtags</a>, <a href="http://r12a.github.io/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a></p>
 
 <div class="section">
-  <p>BCP 47 language tags are built from subtags in the IANA Subtag Registry. This tool helps you find or look up subtags and check for errors in language tags.</p>
-  <p>Read <a href="http://www.w3.org/International/questions/qa-choosing-language-tags">Choosing a Language Tag</a> for step-by-step guidelines on creating language tags. This tool also provides information to guide your choices.</p>
-    <h2>Usage notes</h2>
-    <p><strong><span class="notenumber">1</span> Raw data. </strong>Click on the results with a coloured background to see the raw IANA data for a subtag.</p>
-    <p><strong><span class="notenumber" id="note2">2</span> Find.</strong> The description is  the name of the subtag, ie. the language, region, etc. You can search on any part of a description (eg. <a href="index?find=eng">eng</a> gives results that include B<strong>eng</strong>ali, <strong>Eng</strong>lish and T<strong>eng</strong>war). Note that some languages may be spelled differently, eg. <a href="index?find=panjabi">Panjabi</a> yields three results, but <a href="index?find=punjabi">Punjabi</a> only one.</p>
-    <p><strong><span id="note3" class="notenumber">3</span> Look up. </strong> Looks up all forms of all subtags in the list, eg. it returns both a language and extlang subtag for <a href="index?lookup=cmn">cmn</a>, and it returns both language and region subtags for the CA in <a href="index?lookup=en-CA">en-CA</a>. Subtags can be separated by commas, semicolons, hyphens, or spaces, eg. <a href="index?lookup=en%3B%20fr%2C%20ca%2C%20Bali-1901">en; fr, ca, Bali-1901</a>.<br />
+<h2>Basic use</h2>
+<p><strong><span class="notenumber">1</span> Raw data. </strong>Click on the results with a coloured background to see the raw IANA data for a subtag.</p>
+<p><strong><span class="notenumber" id="note2">2</span> Find.</strong> The description is  the name of the subtag, ie. the language, region, etc. You can search on any part of a description (eg. <a href="index?find=eng">eng</a> gives results that include B<strong>eng</strong>ali, <strong>Eng</strong>lish and T<strong>eng</strong>war). Note that some languages may be spelled differently, eg. <a href="index?find=panjabi">Panjabi</a> yields three results, but <a href="index?find=punjabi">Punjabi</a> only one.</p>
+<p><strong><span id="note3" class="notenumber">3</span> Look up. </strong> Looks up all forms of all subtags in the list, eg. it returns both a language and extlang subtag for <a href="index?lookup=cmn">cmn</a>, and it returns both language and region subtags for the CA in <a href="index?lookup=en-CA">en-CA</a>. Subtags can be separated by commas, semicolons, hyphens, or spaces, eg. <a href="index?lookup=en%3B%20fr%2C%20ca%2C%20Bali-1901">en; fr, ca, Bali-1901</a>.<br>
       Only exact matches of subtags are returned, ie. <a href="index?lookup=ak">ak</a> doesn't match <a href="index?lookup=akk">akk</a>. <br />
       If there is no output for a tag,  it was not a valid tag in the registry.</p>
-    <p><strong><span id="note4" class="notenumber">4</span> Check.</strong> Looks up all subtags in a language tag (ie. a hyphen-separated list of subtags) and reports problems, if there are any, eg. <a href="index?check=de-419-DE-alt">de-419-DE-alt</a> and <a href="index?check=ms-cmn">ms-cmn</a>.<br />
+<p><strong><span id="note4" class="notenumber">4</span> Check.</strong> Looks up all subtags in a language tag (ie. a hyphen-separated list of subtags) and reports problems, if there are any, eg. <a href="index?check=de-419-DE-alt">de-419-DE-alt</a> and <a href="index?check=ms-cmn">ms-cmn</a>.<br>
       Warnings are also displayed to guide you in language choices. Example: <a href="index?check=ms-min-latn">ms-min-Latn</a>.<br />
     </p>
-    <p><strong><span class="notenumber">5</span> &nbsp;<img src="images/charuse.png" alt="Icon with C on it" /></strong> provides a link from a language subtag entry to the Character Usage app. This provides details of characters used by the language, often in multiple orthographies. Macrolanguages have redirects to child languages in the Character Usage app.</p>
+
+<p><strong><span class="notenumber">5</span> &nbsp;<img src="images/charuse.png" alt="Icon with C on it" /></strong> provides a link from a language subtag entry to the Character Usage app. This provides details of characters used by the language, often in multiple orthographies. Macrolanguages have redirects to child languages in the Character Usage app.</p>
     <p><strong><span class="notenumber">6</span> &nbsp;<img src="images/ethn.png" alt="Icon with E on it" /></strong> provides a link from a language subtag entry to the SIL Ethnologue. This is useful when trying to find a language. If there is no page for a given language tag, such as <a href="index?lookup=nn">nn</a>, click on the result to reveal the full record; if there is a macrolanguage specified, eg. 'no',  that will probably yield an ethnologue entry.</p>
     <p><strong><span class="notenumber">7</span> &nbsp;<img src="images/univ.png" alt="Icon with U on it" /></strong> provides a link from a script subtag entry to the most relevant Unicode script block in UniView.<br />
       In some cases, there are additional Unicode areas dedicated to the same script.  These can usually be easily found alongside the current block in UniView's pull-down control. <br />
@@ -134,10 +141,39 @@ one or more subtags <a href="#note3" class="explanation">See note&#xA0;3.</a><br
       and the subtags that are in the current registry will also be shown.</p>
     <p><strong><span class="notenumber">10</span> Redundant tags</strong> are pre-RFC 4646 registrations of tags that can now be formed by 
       combining separate subtags from the current registry. They do not show up in search results.</p>
+</section>
 
+
+
+<div class="section">
+<h2>Lists</h2>
+
+<p>The section <samp>Produce a list of tags</samp> does what it says.  It provides a way to create a simple list from the results that you can copy to another location.</p>
+<p>The default format lists the description followed by the subtag value in square brackets, however you can reverse the order, leave one out, or add any preferred extra text.  For example, you could try <code>$subtag = $desc</code> or <code>&lt;span class="subtag">$subtag&lt;/span>&lt;span class="description">$desc&lt;/span></code>. Items are separated by commas in the output.</p>
+</section>
 </div>
-</details>
 
+
+
+<div class="section">
+<h2>Passing parameters</h2>
+
+<p>You can set the URL of the page to show a particular result. (This was used for the examples above.) It's particularly useful if you want to share results with others.</p>
+
+<p>To do so, simply add <code>?keyword=data</code> to the end of the URL, where <code>keyword</code> is one of: <code>find</code>, <code>lookup</code>, <code>check</code>, or <code>list</code>, and <code>data</code> is the value you want to search for or test.</p>
+<p>For example: <code>?check=de-419-DE-alt</code>.</p>
+</section>
+</div>
+
+
+
+<section>
+<h2>Related links</h2>
+<p><a target="_blank" href="http://www.w3.org/International/articles/language-tags/">About language subtags</a></p>
+<p><a target="_blank" href="http://www.iana.org/assignments/language-subtag-registry">IANA subtag registry</a></p>
+</section>
+</details>
+</div>
 
 
 

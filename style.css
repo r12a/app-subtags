@@ -8,15 +8,18 @@
 }
 body {
 	text-align: left;
+	font-size: unset;
 	}
 h1 {
 	margin-top: 10px;
 	}
 h2 {
-	margin-bottom: 0;
+	margin-block-end: 0;
+	margin-inline-start: 1em;
 	}
 #out h2 {
 	margin: 4em 0 0 0;
+	text-align: end;
 	}
 #out h2:first-of-type {
     margin-top: 0;
@@ -51,6 +54,10 @@ a.term {
 	background-color:#f8f8f8;
 	padding: 8px;
 	text-align: left;
+	background: white;
+	border: 1px solid chocolate;
+	border-radius: 1em;
+	margin: .5em;
 	}
 .reportNote {
 	font-size:80%; 
@@ -62,6 +69,8 @@ a.term {
 	padding: 8px;
 	padding-top: 0;
 	text-align: left;
+	background: white;
+	margin: 1em;
 	}
 
 #userDefined .registryItem h3 {
@@ -70,6 +79,7 @@ a.term {
 
 .registryItem ul {
 	color:#444;
+	background-color: #fef3e6;
 	margin: 0;
 	padding-left: 6em;
 	font-family:"Courier New", Courier, monospace;
@@ -166,7 +176,10 @@ form {
 .registryitem img { vertical-align: middle; }
 sub { color:#C30; font-style: italic; }
 
-.comments { margin-bottom: 5px; }
+.comments { 
+	margin-bottom: 5px;
+	background-color: #fef3e6;
+	}
 .task { font-size: 200%; font-weight:bold; color: #a52a2a;  }
 
 #search { float: left; width: 40%; margin: 0 0 0 6.5%; padding: 1%; }
@@ -192,11 +205,15 @@ sub { color:#C30; font-style: italic; }
 	 flex-direction: row;
 	}
 #output {
-	margin: 0 3em 0 3em;
+	margin: 0 0 0 3em;
 	width: 90%;
+	padding: 0 1em 3em 1em;
+	padding: 1em 1em 3em 1em;
+	background-color: #fef3e6;
+	padding: 0 0 3em .5em;
 	}
 #input {
-	margin: 0 0 0 2em;
+	margin: 0 0 0 1.5em;
 	width: 16em;
 	}
 #input p {
@@ -237,7 +254,67 @@ sub { color:#C30; font-style: italic; }
 	text-align:center;
 	}
 
-#showNotes, #listList {
-	margin-left: 2em;
-	margin-top: 4em;
+#listList {
+	padding: 2em 3em;
+	margin-top: 1em;
+	background: antiquewhite;
 	}
+
+#listList button {
+	font-size: 100%; 
+	color:#333;background-color:#eee; 
+	padding:.2em .4em; 
+	border-radius:5px; 
+	border:0; cursor:pointer;
+	background: chocolate;
+	color: white;
+	}
+#listList h2 {
+    text-align: start;
+    font-size: 150%;
+    color: #a52a2a;
+    font-weight: 400;
+    text-transform: none;
+    margin-top: 1em;
+    margin-bottom: 0;
+    border: 0;
+    line-height: 1;
+    margin: 0 0 1em 0;
+}
+
+
+#showNotes {
+	margin-top: 1em;
+	background: bisque;
+	padding: 1em 0;
+	color: #333;
+	}
+#showNotes p {
+	margin-inline-start: 3em;
+	margin-inline-end: 3em;
+	}
+
+#errors {
+	margin-block-end: 4em;
+	}
+
+summary {
+    font-size: 80%;
+    margin-left: 4em;
+    cursor: pointer;
+	}
+
+small {
+	line-height: 1.4;
+	}
+
+#showNotes p#counts {
+	line-height: 1.4;
+	font-size: 85%;
+	margin: 1em 5em;
+	}
+
+
+
+
+
