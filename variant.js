@@ -37,6 +37,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"fonnapa",description:"North American Phonetic Alphabet, Americanist Phonetic Notation",added:"2016-06-24"},
 {type:"variant",subtag:"fonupa",description:"Uralic Phonetic Alphabet",added:"2006-12-11"},
 {type:"variant",subtag:"fonxsamp",description:"X-SAMPA transcription",added:"2010-10-23",comments:"Indicates that the content is transcribed according to X-SAMPA"},
+{type:"variant",subtag:"gallo",description:"Gallo",added:"2021-08-05",prefix:"fr"},
 {type:"variant",subtag:"gascon",description:"Gascon",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in Gascony"},
 {type:"variant",subtag:"grclass",description:"Classical Occitan orthography",added:"2018-04-22",prefix:"oc, oc-aranes, oc-auvern, oc-cisaup, oc-creiss, oc-gascon, oc-lemosin, oc-lengadoc, oc-nicard, oc-provenc, oc-vivaraup",comments:"Classical written standard for Occitan developed in 1935 by Alibèrt"},
 {type:"variant",subtag:"grital",description:"Italian-inspired Occitan orthography",added:"2018-04-22",prefix:"oc, oc-cisaup, oc-nicard, oc-provenc"},
