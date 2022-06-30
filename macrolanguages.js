@@ -59,5 +59,5 @@ tmh:['taq','thv','thz','ttq'],
 del:['umu','unm'],
 uz:['uzn','uzs'],
 yi:['ydd','yih'],
-zap:['zaa','zab','zac','zad','zae','zaf','zai','zam','zao','zaq','zar','zas','zat','zav','zaw','zax','zca','zoo','zpa','zpb','zpc','zpd','zpe','zpf','zpg','zph','zpi','zpj','zpk','zpl','zpm','zpn','zpo','zpp','zpq','zpr','zps','zpt','zpu','zpv','zpw','zpx','zpy','zpz','zsr','zte','ztg','ztl','ztm','ztn','ztp','ztq','zts','ztt','ztu','ztx','zty'],
+zap:['zaa','zab','zac','zad','zae','zaf','zai','zam','zao','zaq','zar','zas','zat','zav','zaw','zax','zca','zcd','zoo','zpa','zpb','zpc','zpd','zpe','zpf','zpg','zph','zpi','zpj','zpk','zpl','zpm','zpn','zpo','zpp','zpq','zpr','zps','zpt','zpu','zpv','zpw','zpx','zpy','zpz','zsr','zte','ztg','ztl','ztm','ztn','ztp','ztq','zts','ztt','ztu','ztx','zty'],
 za:['zch','zeh','zgb','zgm','zgn','zhd','zhn','zlj','zln','zlq','zqe','zyb','zyg','zyj','zyn','zzj']}
