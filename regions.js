@@ -240,7 +240,7 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"TN",description:"Tunisia",added:"2005-10-16"},
 {type:"region",subtag:"TO",description:"Tonga",added:"2005-10-16"},
 {type:"region",subtag:"TP",description:"East Timor",added:"2005-10-16",deprecated:"2002-05-20",preferredvalue:"TL"},
-{type:"region",subtag:"TR",description:"Turkey",added:"2005-10-16"},
+{type:"region",subtag:"TR",description:"Türkiye, Turkey",added:"2005-10-16"},
 {type:"region",subtag:"TT",description:"Trinidad and Tobago",added:"2005-10-16"},
 {type:"region",subtag:"TV",description:"Tuvalu",added:"2005-10-16"},
 {type:"region",subtag:"TW",description:"Taiwan, Province of China",added:"2005-10-16"},

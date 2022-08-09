@@ -58,6 +58,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"lemosin",description:"Limousin",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in Limousin"},
 {type:"variant",subtag:"lengadoc",description:"Languedocien",added:"2018-04-22",prefix:"oc",comments:"Occitan variant spoken in Languedoc"},
 {type:"variant",subtag:"lipaw",description:"The Lipovaz dialect of Resian, The Lipovec dialect of Resian",added:"2007-08-11",prefix:"sl-rozaj",comments:"The dialect of Lipovaz/Lipovec is one of the minor local dialects of Resian"},
+{type:"variant",subtag:"ltg1929",description:"The Latgalian language orthography codified in 1929",added:"2022-08-05",prefix:"ltg"},
 {type:"variant",subtag:"ltg2007",description:"The Latgalian language orthography codified in the language law in 2007",added:"2022-06-23",prefix:"ltg"},
 {type:"variant",subtag:"luna1918",description:"Post-1917 Russian orthography",added:"2010-10-10",prefix:"ru",comments:"Russian orthography as established by the 1917/1918 orthographic reforms"},
 {type:"variant",subtag:"metelko",description:"Slovene in Metelko alphabet",added:"2012-06-27",prefix:"sl",comments:"The subtag represents the alphabet codified by Franc Serafin Metelko and used from 1825 to 1833."},
