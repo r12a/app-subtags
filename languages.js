@@ -5074,7 +5074,7 @@ var languages = [{type:"language",subtag:"aa",description:"Afar",added:"2005-10-
 {type:"language",subtag:"nrb",description:"Nara",added:"2009-07-29"},
 {type:"language",subtag:"nrc",description:"Noric",added:"2009-07-29"},
 {type:"language",subtag:"nre",description:"Southern Rengma Naga",added:"2009-07-29"},
-{type:"language",subtag:"nrf",description:"Jèrriais, Guernésiais",added:"2015-02-12"},
+{type:"language",subtag:"nrf",description:"Jèrriais, Guernésiais, Sercquiais",added:"2015-02-12"},
 {type:"language",subtag:"nrg",description:"Narango",added:"2009-07-29"},
 {type:"language",subtag:"nri",description:"Chokri Naga",added:"2009-07-29"},
 {type:"language",subtag:"nrk",description:"Ngarla",added:"2013-09-10"},

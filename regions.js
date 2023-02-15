@@ -52,6 +52,7 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"CN",description:"China",added:"2005-10-16"},
 {type:"region",subtag:"CO",description:"Colombia",added:"2005-10-16"},
 {type:"region",subtag:"CP",description:"Clipperton Island",added:"2009-07-29"},
+{type:"region",subtag:"CQ",description:"Sark",added:"2023-02-07"},
 {type:"region",subtag:"CR",description:"Costa Rica",added:"2005-10-16"},
 {type:"region",subtag:"CS",description:"Serbia and Montenegro",added:"2005-10-16",deprecated:"2006-10-05",comments:"see RS for Serbia or ME for Montenegro"},
 {type:"region",subtag:"CU",description:"Cuba",added:"2005-10-16"},
