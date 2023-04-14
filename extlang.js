@@ -14,7 +14,7 @@ var extlang = [{type:"extlang",subtag:"aao",description:"Algerian Saharan Arabic
 {type:"extlang",subtag:"aen",description:"Armenian Sign Language",added:"2009-07-29",preferredvalue:"aen",prefix:"sgn"},
 {type:"extlang",subtag:"afb",description:"Gulf Arabic",added:"2009-07-29",preferredvalue:"afb",prefix:"ar",macrolanguage:"ar"},
 {type:"extlang",subtag:"afg",description:"Afghan Sign Language",added:"2009-07-29",preferredvalue:"afg",prefix:"sgn"},
-{type:"extlang",subtag:"ajp",description:"South Levantine Arabic",added:"2009-07-29",deprecated:"2023-03-17",preferredvalue:"apc",prefix:"ar",macrolanguage:"ar"},
+{type:"extlang",subtag:"ajp",description:"South Levantine Arabic",added:"2009-07-29",deprecated:"2023-03-17",preferredvalue:"ajp",prefix:"ar",macrolanguage:"ar"},
 {type:"extlang",subtag:"ajs",description:"Algerian Jewish Sign Language",added:"2022-02-25",preferredvalue:"ajs",prefix:"sgn"},
 {type:"extlang",subtag:"apc",description:"Levantine Arabic",added:"2009-07-29",preferredvalue:"apc",prefix:"ar",macrolanguage:"ar"},
 {type:"extlang",subtag:"apd",description:"Sudanese Arabic",added:"2009-07-29",preferredvalue:"apd",prefix:"ar",macrolanguage:"ar"},
