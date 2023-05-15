@@ -20,6 +20,8 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"barla",description:"The Barlavento dialect group of Kabuverdianu",prefix:"kea",comments:"Barlavento is one of the two main dialect groups of Kabuverdianu.",added:"2013-12-10"},
 {type:"variant",subtag:"basiceng",description:"Basic English",added:"2015-12-29",prefix:"en"},
 {type:"variant",subtag:"bauddha",description:"Buddhist Hybrid Sanskrit",added:"2010-07-28",prefix:"sa"},
+{type:"variant",subtag:"bciav",description:"BCI Blissymbolics AV",added:"2023-05-11",prefix:"zbl",comments:"Name given to a subset of the variety of Blissymbolics curated by Blissymbolics Communication International, as represented by entries in the BCI Authorized Vocabulary"},
+{type:"variant",subtag:"bcizbl",description:"BCI Blissymbolics",added:"2023-05-11",prefix:"zbl",comments:"Name given to the variety of Blissymbolics curated by Blissymbolics Communication International"},
 {type:"variant",subtag:"biscayan",description:"Biscayan dialect of Basque",added:"2010-04-13",prefix:"eu"},
 {type:"variant",subtag:"biske",description:"The San Giorgio dialect of Resian, The Bila dialect of Resian",added:"2007-07-05",prefix:"sl-rozaj",comments:"The dialect of San Giorgio/Bila is one of the four major local dialects of Resian"},
 {type:"variant",subtag:"bohoric",description:"Slovene in Bohorič alphabet",added:"2012-06-27",prefix:"sl",comments:"The subtag represents the alphabet codified by Adam Bohorič in 1584 and used from the first printed Slovene book and up to the mid-19th century."},
