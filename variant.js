@@ -24,6 +24,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"bcizbl",description:"BCI Blissymbolics",added:"2023-05-11",prefix:"zbl",comments:"Name given to the variety of Blissymbolics curated by Blissymbolics Communication International"},
 {type:"variant",subtag:"biscayan",description:"Biscayan dialect of Basque",added:"2010-04-13",prefix:"eu"},
 {type:"variant",subtag:"biske",description:"The San Giorgio dialect of Resian, The Bila dialect of Resian",added:"2007-07-05",prefix:"sl-rozaj",comments:"The dialect of San Giorgio/Bila is one of the four major local dialects of Resian"},
+{type:"variant",subtag:"blasl",description:"Black American Sign Language dialect",added:"2023-07-31",prefix:"ase, sgn-ase",comments:"Black American Sign Language (BASL) or Black Sign Variation (BSV) is a dialect of American Sign Language (ASL)"},
 {type:"variant",subtag:"bohoric",description:"Slovene in Bohorič alphabet",added:"2012-06-27",prefix:"sl",comments:"The subtag represents the alphabet codified by Adam Bohorič in 1584 and used from the first printed Slovene book and up to the mid-19th century."},
 {type:"variant",subtag:"boont",description:"Boontling",added:"2006-09-18",prefix:"en",comments:"Jargon embedded in American English"},
 {type:"variant",subtag:"bornholm",description:"Bornholmsk",added:"2019-03-27",prefix:"da"},
