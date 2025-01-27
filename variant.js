@@ -59,6 +59,7 @@ var variant = [{type:"variant",subtag:"1606nict",description:"Late Middle French
 {type:"variant",subtag:"jauer",description:"Jauer dialect of Romansh",added:"2010-06-29",prefix:"rm",comments:"The spoken dialect of the Val Müstair, which has no written standard."},
 {type:"variant",subtag:"jyutping",description:"Jyutping Cantonese Romanization",added:"2010-10-23",prefix:"yue",comments:"Jyutping romanization of Cantonese"},
 {type:"variant",subtag:"kkcor",description:"Common Cornish orthography of Revived Cornish",added:"2008-10-14",prefix:"kw"},
+{type:"variant",subtag:"kleinsch",description:"Kleinschmidt orthography, Allattaasitaamut",added:"2024-07-20",prefix:"kl, kl-tunumiit",comments:"Orthography for Greenlandic designed by Samuel Kleinschmidt, used from 1851 to 1973."},
 {type:"variant",subtag:"kociewie",description:"The Kociewie dialect of Polish",added:"2014-11-27",prefix:"pl",comments:"The dialect of Kociewie is spoken in the region around Starogard Gdański, Tczew and Świecie in northern Poland."},
 {type:"variant",subtag:"kscor",description:"Standard Cornish orthography of Revived Cornish, Kernowek Standard",added:"2012-06-27",prefix:"kw"},
 {type:"variant",subtag:"laukika",description:"Classical Sanskrit",added:"2010-07-28",deprecated:"2024-06-08",prefix:"sa",comments:"Preferred tag is cls"},
