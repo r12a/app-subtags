@@ -7971,6 +7971,7 @@ var languages = [{type:"language",subtag:"aa",description:"Afar",added:"2005-10-
 {type:"language",subtag:"ymx",description:"Northern Muji",added:"2009-07-29"},
 {type:"language",subtag:"ymz",description:"Muzi",added:"2009-07-29"},
 {type:"language",subtag:"yna",description:"Aluo",added:"2009-07-29"},
+{type:"language",subtag:"ynb",description:"Yamben",added:"2025-02-06"},
 {type:"language",subtag:"ynd",description:"Yandruwandha",added:"2009-07-29"},
 {type:"language",subtag:"yne",description:"Lang'e",added:"2009-07-29"},
 {type:"language",subtag:"yng",description:"Yango",added:"2009-07-29"},

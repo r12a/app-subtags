@@ -1,4 +1,4 @@
-File-Date: 2025-01-21
+File-Date: 2025-03-10
 %%
 Type: language
 Subtag: aa
@@ -41328,6 +41328,11 @@ Description: Aluo
 Added: 2009-07-29
 %%
 Type: language
+Subtag: ynb
+Description: Yamben
+Added: 2025-02-06
+%%
+Type: language
 Subtag: ynd
 Description: Yandruwandha
 Added: 2009-07-29
@@ -44894,6 +44899,11 @@ Description: Bangla
 Added: 2005-10-16
 %%
 Type: script
+Subtag: Berf
+Description: Beria Erfe
+Added: 2025-02-06
+%%
+Type: script
 Subtag: Bhks
 Description: Bhaiksuki
 Added: 2015-07-24
@@ -47969,6 +47979,12 @@ Comments: Written standard developed by Romanilha in 1853 and used by
   dóu Po, Escolo Gaston Febus, and others
 %%
 Type: variant
+Subtag: hanoi
+Description: The Hà Nội variant of Vietnamese
+Added: 2025-03-10
+Prefix: vi
+%%
+Type: variant
 Subtag: hepburn
 Description: Hepburn romanization
 Added: 2009-10-01
@@ -47997,6 +48013,12 @@ Description: Standard H-system orthographic fallback for spelling
   Esperanto
 Added: 2017-03-14
 Prefix: eo
+%%
+Type: variant
+Subtag: huett
+Description: The Huế (province Thừa Thiên) variant of Vietnamese
+Added: 2025-03-10
+Prefix: vi
 %%
 Type: variant
 Subtag: ijekavsk
@@ -48074,6 +48096,13 @@ Prefix: sa
 Comments: Preferred tag is cls
 %%
 Type: variant
+Subtag: leidentr
+Description: Ancient Egyptian in Leiden Unified Transliteration
+Added: 2025-02-06
+Prefix: egy
+Comments: Recommended by the International Association of Egyptologists
+%%
+Type: variant
 Subtag: lemosin
 Description: Limousin
 Added: 2018-04-22
@@ -48116,6 +48145,19 @@ Added: 2010-10-10
 Prefix: ru
 Comments: Russian orthography as established by the 1917/1918
   orthographic reforms
+%%
+Type: variant
+Subtag: mdcegyp
+Description: Ancient Egyptian hieroglyphs encoded in Manuel de Codage
+Added: 2025-02-06
+Prefix: egy
+%%
+Type: variant
+Subtag: mdctrans
+Description: Ancient Egyptian transliteration encoded in Manuel de
+  Codage
+Added: 2025-02-06
+Prefix: egy
 %%
 Type: variant
 Subtag: metelko
@@ -48303,6 +48345,12 @@ Description: Rumantsch Grischun
 Added: 2010-06-29
 Prefix: rm
 Comments: Supraregional Romansh written standard
+%%
+Type: variant
+Subtag: saigon
+Description: The Sài Gòn variant of Vietnamese
+Added: 2025-03-10
+Prefix: vi
 %%
 Type: variant
 Subtag: scotland

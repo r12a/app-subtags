@@ -12,6 +12,7 @@ var scripts = [{type:"script",subtag:"Adlm",description:"Adlam",added:"2014-12-1
 {type:"script",subtag:"Bass",description:"Bassa Vah",added:"2010-04-10"},
 {type:"script",subtag:"Batk",description:"Batak",added:"2005-10-16"},
 {type:"script",subtag:"Beng",description:"Bengali, Bangla",added:"2005-10-16"},
+{type:"script",subtag:"Berf",description:"Beria Erfe",added:"2025-02-06"},
 {type:"script",subtag:"Bhks",description:"Bhaiksuki",added:"2015-07-24"},
 {type:"script",subtag:"Blis",description:"Blissymbols",added:"2005-10-16"},
 {type:"script",subtag:"Bopo",description:"Bopomofo",added:"2005-10-16"},
