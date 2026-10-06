@@ -180,7 +180,7 @@ var regions = [{type:"region",subtag:"AA",description:"Private use",added:"2005-
 {type:"region",subtag:"NL",description:"Netherlands",added:"2005-10-16"},
 {type:"region",subtag:"NO",description:"Norway",added:"2005-10-16"},
 {type:"region",subtag:"NP",description:"Nepal",added:"2005-10-16"},
-{type:"region",subtag:"NR",description:"Nauru",added:"2005-10-16"},
+{type:"region",subtag:"NR",description:"Naoero, Nauru",added:"2005-10-16"},
 {type:"region",subtag:"NT",description:"Neutral Zone",added:"2005-10-16",deprecated:"1993-07-12"},
 {type:"region",subtag:"NU",description:"Niue",added:"2005-10-16"},
 {type:"region",subtag:"NZ",description:"New Zealand",added:"2005-10-16"},
